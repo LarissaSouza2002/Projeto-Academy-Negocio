@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: -webkit-gradient(linear, left top, left bottom, from(#FDEDEE), to(#EAAFB2)) fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    font-weight: 600;
+}
+
+a:hover{
+    font-weight: 800;
+    color: #EF7070;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5vw ;
+    margin-right:5vw ;
+}
+
+header img{
+    width: 220px;
+}
+
+main{
+    margin: 10vh;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+
+}
+
+main h1{
+    text-align: center;
+    margin-bottom: 3vh;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.horarios{
+    text-align: right;
+    height: 487px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+section h3{
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.dia{
+    font-weight: bold;
+}
+
+.horas{
+    margin-bottom: 5px;
+}
+
+footer{
+    background-color: #EF7070;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img{
+    width: 200px;
+    display: flex;
+    padding-right: 43vw;
+}
+
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+}
+
+
+.lado-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid #ffffff;
+    background-color: transparent;
+    width: 540px;
+}
+
+.lado-map{
+    display: flex;
+    margin-bottom: 25px;
+    
+}
+
+.lados{
+    display: flex;
+    justify-content: space-between;
+}
+.lado-form input{
+    width: 505px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#button-submit{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;  
+    background-color:#EF7070;
+    width: 252px;
+    align-self: flex-end;
+}
+
+span{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+#campo-text{
+    height: 165px;
+}
+
+
+iframe{
+    width: 568px;
+    height: 487px;
+}
+
+
+@media (max-width: 768px){
+
+.galeria-item p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.galeria img{
+    height: 20vh;
+}
+.galeria{
+    margin-bottom: 3vh;
+}
+}
+
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        margin-bottom: 5vh;
+    }
+
+    .galeria-item{
+        width: 33vw;
+    }
+
+    footer img{
+        padding-right: 0;
+    }
+    
+    
+}
+
+@media (max-width: 375px){
+    
+    header{
+    flex-direction: column;
+}
+
+#logo{
+    width: 200vw;
+}
+
+footer img{
+    padding-right: 0;
+}
+
+.galeria-item{
+    width: 100vw;
+}
+
+}
+
+/* button{
+    padding: 10px 22px;
+    align-self: center;
+    cursor: pointer;  
+    background-color:#EF7070;
+    color: #fff;
+    border-radius: 20px;
+    height: 48px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .lado-form{
+        text-transform: uppercase;
+        color: black;
+        padding: 20px;
+        width: 445px;
+        height: 504px;
+        border-radius: 10px;
+        border: solid #ffffff;
+        display: grid;
+        justify-content: center;
+        justify-items: start;
+        margin-bottom: 5vw;
+    } */
+    
+    
+    
+    /* div input{
+        width: 355px;
+        height: 48px;
+    } */
+    
+    /* 
+    button{
+        margin: 5px;
+        align-items: center;
+        border-radius: 20px;
+        padding: 10px 22px;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    } */
