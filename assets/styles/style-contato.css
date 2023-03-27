@@ -100,14 +100,28 @@ footer img{
     padding-right: 43vw;
 }
 
-
-.fields{
+form{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 500px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form-control{
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    /* display: flex; */
+    /* gap: 5px; */
+    width: 510px;
 }
 
+form div input{
+    padding-left: 10px;
+}
 
 .lado-form{
     display: flex;
@@ -117,12 +131,76 @@ footer img{
     border: solid #ffffff;
     background-color: transparent;
     width: 540px;
+    margin-bottom: 90px;
 }
+
+.form-control{
+    position: relative;
+}
+
+.form-control small{
+    position: absolute;
+    /* bottom: ; */
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control i{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+textarea{
+    margin-bottom: 25px;
+}
+/* ERROR and SUCCESS*/
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+textarea:focus, input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #9d1b0d;
+}
+
+textarea{
+    resize: none;
+    align-self: center;
+}
+
+/* #campo-descricao{
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+} */
 
 .lado-map{
     display: flex;
     margin-bottom: 25px;
-    
+    align-items: center;
 }
 
 .lados{
@@ -139,15 +217,24 @@ footer img{
     margin-bottom: 15px;
 }
 
-#button-submit{
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-weight: 600;
+.form-control-button{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#button{
     border-radius: 20px;
-    cursor: pointer;  
-    background-color:#EF7070;
+    padding: 10px 22px;
+    text-align: center;
+    text-transform: uppercase;
+    /* display: flex; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
     width: 252px;
-    align-self: flex-end;
+    background-color:#EF7070;
 }
 
 span{
@@ -157,9 +244,9 @@ span{
     margin-top: 5vh;
 }
 
-#campo-text{
+/* #campo-text{
     height: 165px;
-}
+} */
 
 
 iframe{
