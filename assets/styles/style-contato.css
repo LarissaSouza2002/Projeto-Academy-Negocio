@@ -139,9 +139,8 @@ form div input{
 }
 
 .form-control small{
-    position: absolute;
-    /* bottom: ; */
     left: 0;
+    margin-left: 5px;
     visibility: hidden;
 }
 
